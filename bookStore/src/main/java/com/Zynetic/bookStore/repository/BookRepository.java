@@ -14,8 +14,6 @@ public interface BookRepository extends JpaRepository<Book, Long> {
 
     List<Book> findByRating(Double rating);
 
-    //CUSTOM query for title
-    @Query("SELECT b FROM Book b WHERE LOWER(b.title) LIKE LOWER(CONCAT('%',:title, '%'))")
-    List<Book> searchByTitle(String title);
+    List<Book> findByTitleContainingIgnoreCase(String title);
 
 }
