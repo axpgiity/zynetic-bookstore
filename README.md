@@ -32,8 +32,8 @@ A RESTful API for managing a bookstore with JWT-based authentication, built usin
 spring.application.name=bookStore
 
 spring.datasource.url=jdbc:postgresql://localhost:5432/BOOK_STORE
-spring.datasource.username=postgres
-spring.datasource.password=230705
+spring.datasource.username=your_username
+spring.datasource.password=your_password
 
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
